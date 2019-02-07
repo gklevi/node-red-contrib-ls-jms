@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ls-jms-config', {
+        category: 'config',
+        defaults: {
+            lightstreamerUrl: {value: 'http://localhost:8080'},
+			cfgName: {value: ''}
+        },
+        label: function() {
+            return this.lightstreamerUrl + ',' + this.cfgName;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ls-jms-config">
+    <div class="form-row">
+        <label for="node-config-input-lightstreamerUrl"><i class="icon-bookmark"></i> LS URL</label>
+        <input type="text" id="node-config-input-lightstreamerUrl" placeholder="Url">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-cfgName"><i class="icon-comment"></i> LS Adapter</label>
+        <input type="text" id="node-config-input-cfgName" placeholder="e.g. ActiveMQ">
+    </div>
+	<!--<div class="form-row">
+        <label for="node-config-input-cfgCF"><i class="icon-comment"></i> ConnectionFactory</label>
+        <input type="text" id="node-config-input-cfgName" placeholder="e.g. PAPPCF">
+    </div>-->
+</script>

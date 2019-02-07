@@ -1,0 +1,26 @@
+{
+    "name" : "node-red-contrib-ls-jms",
+	"description": "Node-RED nodes to send and receive jms messages leveraging lightstreamer jms extender (https://lightstreamer.com/ls-jms-features)",
+	"author": {
+		"name": "Gerd Klevesaat",
+		"email": "gerd.klevesaat@gmail.com"
+	},
+	"bundleDependencies": false,
+	"dependencies": {
+		"lightstreamer-jms-client": "^1.2.1"
+	},
+	"license": "Apache 2.0",
+    "node-red" : {
+        "nodes": {
+            "ls-jms-in": "ls_jms_in.js",
+            "ls-jms-out": "ls_jms_out.js",
+            "ls-jms-config": "ls_jms_config.js"
+        }
+    },
+	"keywords": [ 
+		"node-red",
+		"jms",
+		"lightstreamer"
+	],	
+	"version": "0.1.0"
+}

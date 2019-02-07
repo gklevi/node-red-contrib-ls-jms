@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ls-jms-out', {
+        category: 'output',
+        color: '#B6CF87',
+        defaults: {
+			lightstreamerJmsConfig: {value:"", type:"ls-jms-config"},
+            name: {value: ''},
+			destinationType: {value: ''},
+ 			destination: {value: ''}
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: 'ls_jms.png',
+        label: function() {
+            return this.name && this.name.length ? this.name : 'ls-jms-out';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ls-jms-out">
+    <div class="form-row">
+        <label for="node-input-lightstreamerJmsConfig"><i class="icon-bookmark"></i> Lightstreamer JMS Config</label>
+        <input type="text" id="node-input-lightstreamerJmsConfig" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-destinationType"><i class="icon-file"></i> Destination Type</label>
+		<select id="node-input-destinationType">
+			<option value="Topic">Topic</option>
+			<option value="Queue">Queue</option>
+		</select> 
+    </div>
+    <div class="form-row">
+        <label for="node-input-destination"><i class="icon-bullseye"></i> Destination</label>
+        <input type="text" id="node-input-destination" placeholder="Destination">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ls-jms-out">
+    <p>A simple node that sends JMS messages leveraging lightstreamer jms extender</p>
+	<h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string | buffer</span>
+        </dt>
+        <dd> jms message payload to send. </dd>
+        <dt class="optional">properties<span class="property-type">object</span></dt>
+        <dd> jms properties to add to the JMS message object.</dd> -->
+    </dl>	
+	<h3>Details</h3>
+		<p><code>msg.payload</code> is used as the payload of the published JMS message.
+		It will be sent as a TextMessage Object to the JMS broker.</p>
+		<p>Optionally, JMS properties may be set by an object <code>properties</code>. 
+	<h3>References</h3>
+    <ul>
+        <li><a>Lightstream JMS Extender</a> - full description of <code>JMS Api</code> provided to the node js</li>
+        <li><a>GitHub</a> - the nodes github repository</li>
+    </ul>
+	
+</script>
