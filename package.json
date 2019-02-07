@@ -5,11 +5,12 @@
 		"name": "Gerd Klevesaat",
 		"email": "gerd.klevesaat@gmail.com"
 	},
+	"repository": "github:klevi/node-red-contrib-ls-jms",	
 	"bundleDependencies": false,
 	"dependencies": {
 		"lightstreamer-jms-client": "^1.2.1"
 	},
-	"license": "Apache 2.0",
+	"license": "MIT",
     "node-red" : {
         "nodes": {
             "ls-jms-in": "ls_jms_in.js",
