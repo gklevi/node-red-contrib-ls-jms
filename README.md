@@ -38,10 +38,11 @@ For both nodes you can set a name, the destination type (queue or topic), the na
 
 The configuration node configures the reference to the lightstreamer jms extender. 
 The lightstreamer jms extender has a configuration of its own for accessing jms brokers (refer to the lightstreamer jms extender documentation).
-In the configuration node you set the url of the lightstreamer jms extender and the name of the adapter in the lightreamer jms extender configuration file
+In the configuration node you set the url of the lightstreamer jms extender and the name of the adapter (to the the jms broker) in the lightreamer jms extender configuration file
 
 ![ls-jms-config-node](/images/config-node.png "ls-jms config node")
 
+ 
 
 ## Release History
 
