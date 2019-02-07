@@ -5,7 +5,7 @@
 		"name": "Gerd Klevesaat",
 		"email": "gerd.klevesaat@gmail.com"
 	},
-	"repository": "github:klevi/node-red-contrib-ls-jms",	
+	"repository": "github:gklevi/node-red-contrib-ls-jms",	
 	"bundleDependencies": false,
 	"dependencies": {
 		"lightstreamer-jms-client": "^1.2.1"
