@@ -42,7 +42,10 @@ In the configuration node you set the url of the lightstreamer jms extender and 
 
 ![ls-jms-config-node](/images/config-node.png "ls-jms config node")
 
- 
+After applying these settings the configuration node can be referenced by any input or output node. 
+
+![ls-jms-config-node2](/images/config-node-2.png "ls-jms config node")
+
 
 ## Release History
 
