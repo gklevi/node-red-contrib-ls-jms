@@ -31,7 +31,7 @@ An output node for sending jms messages.
 
 ![ls-jms-out-node](/images/ls-jms-out.png "ls-jms input node")
 
-Drag and drop them oonto the canvas of the node-red-editor as any other nodes. Configrue these nodes by double-clicking. 
+Drag and drop them onto the canvas of the node-red-editor as any other nodes. Configrue these nodes by double-clicking. 
 For both nodes you can set a name, the destination type (queue or topic), the name of the destination and the lightstreamer jms configuration node.
 
 ![ls-jms-in-node-config](/images/ls-jms-in-config.png "ls-jms input node configuration")
